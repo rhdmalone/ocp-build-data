@@ -21,7 +21,11 @@ name: openshift/ose-egress-http-proxy
 owners:
 - aos-network-edge@redhat.com
 konflux:
-  network_mode: open
+  cachi2:
+    lockfile:
+      modules:
+      - perl
+      - squid
 delivery:
   delivery_repo_names:
   - openshift4/ose-egress-http-proxy

@@ -36,4 +36,7 @@ name: openshift/base-nodejs
 owners:
 - aos-team-art@redhat.com
 konflux:
-  network_mode: open
+  cachi2:
+    lockfile:
+      modules:
+      - python36:3.6

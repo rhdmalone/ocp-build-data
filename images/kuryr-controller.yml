@@ -35,7 +35,10 @@ owners:
 - kuryr-team@redhat.com
 - mdulko@redhat.com
 konflux:
-  network_mode: open
+  cachi2:
+    lockfile:
+      modules:
+      - python36:3.6
 delivery:
   delivery_repo_names:
   - openshift4/ose-kuryr-controller-rhel8

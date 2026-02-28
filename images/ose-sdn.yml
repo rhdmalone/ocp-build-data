@@ -27,7 +27,10 @@ name: openshift/ose-sdn-rhel8
 owners:
 - aos-networking-staff@redhat.com
 konflux:
-  network_mode: open
+  cachi2:
+    lockfile:
+      modules:
+      - container-tools
 delivery:
   delivery_repo_names:
   - openshift4/ose-sdn-rhel8
