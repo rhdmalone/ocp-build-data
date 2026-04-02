@@ -4,8 +4,8 @@ releases:
       type: standard
       basis:
         time: "2026-04-01T13:22:58+00:00"
-        reference_releases:
-          x86_64: 4.12.0-0.nightly-2026-04-01-155323
+        reference_releases!: {}
+          # x86_64: 4.12.0-0.nightly-2026-04-01-155323
       group:
         advisories:
           rpm: -1
@@ -29,6 +29,9 @@ releases:
         rhel-coreos-8-extensions:
           images:
             x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:acb365d18b1d3205d071dec2247471e8a7c265fa8bb119ee5d009d0e87c6c599
+      permits:
+        - code: MISMATCHED_NETWORK_MODE           
+          component: openshift-enterprise-builder
       members:
         rpms: []
         images:
