@@ -31,7 +31,12 @@ releases:
             x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:acb365d18b1d3205d071dec2247471e8a7c265fa8bb119ee5d009d0e87c6c599
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: openshift-enterprise-builder
+            metadata:
+              is:
+                nvr: openshift-enterprise-builder-container-v4.12.0-202602270107.p2.ge355452.assembly.stream.el8
+            why: Use the image that includes the right runc rpm ( runc-1.2.9-1.rhaos4.17.el8 )        
   4.12.86:
     assembly:
       type: standard
