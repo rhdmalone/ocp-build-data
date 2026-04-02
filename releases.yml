@@ -6,8 +6,6 @@ releases:
         reference_releases:
           x86_64: 4.12.0-0.nightly-2026-04-02-131509
         time: "2026-04-02T13:03:24+00:00"
-        reference_releases!: {}
-          # x86_64: 4.12.0-0.nightly-2026-04-01-155323
       group:
         advisories:
           rpm: -1
