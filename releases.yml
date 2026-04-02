@@ -3,9 +3,9 @@ releases:
     assembly:
       type: standard
       basis:
-        time: "2026-04-01T13:22:58+00:00"
-        reference_releases!: {}
-          # x86_64: 4.12.0-0.nightly-2026-04-01-155323
+        reference_releases:
+          x86_64: 4.12.0-0.nightly-2026-04-02-131509
+        time: "2026-04-02T13:03:24+00:00"
       group:
         advisories:
           rpm: -1
@@ -30,16 +30,11 @@ releases:
           images:
             x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:acb365d18b1d3205d071dec2247471e8a7c265fa8bb119ee5d009d0e87c6c599
       permits:
-        - code: MISMATCHED_NETWORK_MODE           
+        - code: MISMATCHED_NETWORK_MODE
           component: openshift-enterprise-builder
       members:
         rpms: []
-        images:
-          - distgit_key: openshift-enterprise-builder
-            metadata:
-              is:
-                nvr: openshift-enterprise-builder-container-v4.12.0-202602270107.p2.ge355452.assembly.stream.el8
-            why: Use the image that includes the right runc rpm ( runc-1.2.9-1.rhaos4.17.el8 )        
+        images: []
   4.12.86:
     assembly:
       type: standard
