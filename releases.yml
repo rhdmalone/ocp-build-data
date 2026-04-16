@@ -44,7 +44,122 @@ releases:
             ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:db60676050fff4c76a81ca39d566bdc2d63698f8ba640debf9b4a67eacabb755
       members:
         rpms: []
-        images: []
+        images:
+          - distgit_key: kube-rbac-proxy
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: kube-rbac-proxy-container-v4.14.0-202604140121.p2.gb8b8259.assembly.stream.el8
+          - distgit_key: node-feature-discovery
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: node-feature-discovery-container-v4.14.0-202604140121.p2.ga679fac.assembly.stream.el8
+          - distgit_key: local-storage-diskmaker
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: local-storage-diskmaker-container-v4.14.0-202604130126.p2.g1f4c027.assembly.stream.el9
+          - distgit_key: ose-local-storage-mustgather
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-local-storage-mustgather-container-v4.14.0-202604130126.p2.g1f4c027.assembly.stream.el9
+          - distgit_key: csi-livenessprobe
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: csi-livenessprobe-container-v4.14.0-202604140121.p2.ga9bcbde.assembly.stream.el8
+          - distgit_key: csi-node-driver-registrar
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: csi-node-driver-registrar-container-v4.14.0-202604140121.p2.g9dcaa7f.assembly.stream.el8
+          - distgit_key: csi-provisioner
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: csi-provisioner-container-v4.14.0-202604140121.p2.ge18ed7f.assembly.stream.el8
+          - distgit_key: ose-aws-efs-csi-driver
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-aws-efs-csi-driver-container-v4.14.0-202604140121.p2.g67eddc2.assembly.stream.el8
+          - distgit_key: ose-csi-external-resizer
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-csi-external-resizer-container-v4.14.0-202604140121.p2.g59a701a.assembly.stream.el8
+          - distgit_key: ose-csi-external-snapshotter
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-csi-external-snapshotter-container-v4.14.0-202604140121.p2.ga683453.assembly.stream.el8
+          - distgit_key: ose-gcp-filestore-csi-driver
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-gcp-filestore-csi-driver-container-v4.14.0-202604140121.p2.g4f42f91.assembly.stream.el8
+          - distgit_key: ose-metallb
+            why: Pin earlier build to match operator bundle references
+            metadata:
+              is:
+                nvr: ose-metallb-container-v4.14.0-202604130126.p2.g772cd97.assembly.stream.el9
+          - distgit_key: cloud-event-proxy
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: cloud-event-proxy-container-v4.14.0-202604140121.p2.ge0c0de7.assembly.stream.el8
+          - distgit_key: ose-linuxptp-daemon
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-linuxptp-daemon-container-v4.14.0-202604140121.p2.g0289c4c.assembly.stream.el9
+          - distgit_key: ose-secrets-store-csi-driver
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-secrets-store-csi-driver-container-v4.14.0-202604140121.p2.g4b5bd4b.assembly.stream.el8
+          - distgit_key: ose-vertical-pod-autoscaler
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-vertical-pod-autoscaler-container-v4.14.0-202604140121.p2.gd030dba.assembly.stream.el8
+          - distgit_key: ose-clusterresourceoverride
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ose-clusterresourceoverride-container-v4.14.0-202604140121.p2.g61de9ca.assembly.stream.el8
+          - distgit_key: ib-sriov-cni
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: ib-sriov-cni-container-v4.14.0-202604140121.p2.g15cc64c.assembly.stream.el8
+          - distgit_key: sriov-cni
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: sriov-cni-container-v4.14.0-202604140121.p2.g06859a6.assembly.stream.el9
+          - distgit_key: sriov-dp-admission-controller
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: sriov-dp-admission-controller-container-v4.14.0-202604140121.p2.g424fc86.assembly.stream.el8
+          - distgit_key: sriov-network-config-daemon
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: sriov-network-config-daemon-container-v4.14.0-202604140121.p2.g4feb637.assembly.stream.el8
+          - distgit_key: sriov-network-device-plugin
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: sriov-network-device-plugin-container-v4.14.0-202604140121.p2.ga1cbb4e.assembly.stream.el8
+          - distgit_key: sriov-network-webhook
+            why: Pin later build because operator bundles reference newer version
+            metadata:
+              is:
+                nvr: sriov-network-webhook-container-v4.14.0-202604140121.p2.g4feb637.assembly.stream.el8        
   4.14.63:
     assembly:
       type: standard
